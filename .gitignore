@@ -43,6 +43,7 @@ dev/
 
 # Security stuff
 backend/fwitter-backend/src/main/resources/application.properties
+backend/.metadata
 
 # testing
 dev/
