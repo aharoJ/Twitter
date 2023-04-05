@@ -45,6 +45,7 @@ dev/
 backend/fwitter-backend/src/main/resources/application.properties
 backend/.metadata
 
+
 # testing
 dev/
 src/pages/projects.js
