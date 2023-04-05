@@ -21,3 +21,68 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+
+
+######### aharoJ #########
+pages/index.tsx
+pages/_app.tsx
+pages/_document.tsx
+
+# ignore ".trash" directory
+/.trash
+
+# Ignore the ".obsidian" folder
+/.obsidian
+
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore the "dev" folder
+dev/
+
+# Security stuff
+src/components/Icons.js
+src/pages/index.js
+
+# testing
+dev/
+src/pages/projects.js
+###############################
+
+
+
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
