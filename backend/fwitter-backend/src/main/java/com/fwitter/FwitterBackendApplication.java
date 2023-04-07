@@ -29,11 +29,12 @@ public class FwitterBackendApplication {
 		{
 			roleRepo.save(new Role(1, "USER"));
 
-			ApplicationUser u = new ApplicationUser();
+			/*ApplicationUser u = new ApplicationUser();
 			u.setFirstName("Angel");
 			u.setLastName("Haro");
 
-			userService.registerUser(u);
+			userService.registerUser(u);*/
+			
 
 			/*ApplicationUser u = new ApplicationUser();
 			u.setFirstName("Yaretzy");

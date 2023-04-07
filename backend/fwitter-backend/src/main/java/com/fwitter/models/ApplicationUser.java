@@ -28,10 +28,10 @@ public class ApplicationUser
     private Integer userId;
     
     @Column(name = "first_name")  // optional cuz spring auto-does this
-    private String firstName;
+    private String firstName;     // end point must be this not first_name
 
     @Column(name = "last_name") // optional cuz spring auto-does this
-    private String lastName;
+    private String lastName;  // end point must be this not last_name
 
     @Column(unique= true)
     private String email;
@@ -46,6 +46,7 @@ public class ApplicationUser
 
     @JsonIgnore             // we dont want the password object to be sending back n forth to end-user... securirty issue
     private String password;
+    
 
     @ManyToMany(fetch = FetchType.EAGER) // every time we get a user, we want to feth the users roles
     @JoinTable(
