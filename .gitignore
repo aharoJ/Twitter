@@ -24,10 +24,7 @@ hs_err_pid*
 
 
 
-######### aharoJ #########
-pages/index.tsx
-pages/_app.tsx
-pages/_document.tsx
+######### aharoJ ##################
 
 # ignore ".trash" directory
 /.trash
@@ -41,15 +38,20 @@ pages/_document.tsx
 # Ignore the "dev" folder
 dev/
 
+# maven
+.mvn
+.mvn/wrapper
+
 # Security stuff
 backend/fwitter-backend/src/main/resources/application.properties
 backend/.metadata
 backend/fwitter-backend/src/main/java/com/fwitter/exceptions
+backend/fwitter-backend/src/main/java/com/fwitter/exceptionss
 
 # testing
 dev/
 src/pages/projects.js
-###############################
+########################################
 
 
 
