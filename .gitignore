@@ -40,7 +40,7 @@ dev/
 
 # maven
 .mvn
-.mvn/wrapperr
+.mvn/wrapper
 
 # Security stuff
 backend/fwitter-backend/src/main/resources/application.properties
