@@ -46,7 +46,6 @@ dev/
 backend/fwitter-backend/src/main/resources/application.properties
 backend/.metadata
 backend/fwitter-backend/src/main/java/com/fwitter/exceptions
-backend/fwitter-backend/src/main/java/com/fwitter/exceptionss
 
 # testing
 dev/
