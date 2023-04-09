@@ -44,7 +44,7 @@ dev/
 # Security stuff
 backend/fwitter-backend/src/main/resources/application.properties
 backend/.metadata
-fwitter/backend/fwitter-backend/src/main/java/com/fwitter/exceptionss
+backend/fwitter-backend/src/main/java/com/fwitter/exceptions
 
 # testing
 dev/
