@@ -57,11 +57,17 @@ public class ApplicationUser
 
     private Set<Role> authorities;      // naming convention for spring-security 
 
+    private Boolean enabled;            // sping-security stuff
+
+    @Column(nullable = true)
+    @JsonIgnore                         // we dont want the user to get the notification
+    private Long verification;
 
 
     
     public ApplicationUser(){
         this.authorities= new HashSet<>();
+        this.enabled= false;                    // when we first create the account we dont want the user to be able to use it 
     }
 
 
@@ -160,11 +166,38 @@ public class ApplicationUser
 
 
 
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
+
+
+    public Long getVerification() {
+        return verification;
+    }
+
+
+
+    public void setVerification(Long verification) {
+        this.verification = verification;
+    }
+
+
+
     @Override
     public String toString() {
         return "ApplicationUser [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
                 + email + ", phone=" + phone + ", dateOfBirth=" + dateOfBirth + ", username=" + username + ", password="
-                + password + ", authorities=" + authorities + "]";
+                + password + ", authorities=" + authorities + ", enabled=" + enabled + ", verification=" + verification
+                + "]";
     }
 
+
+ 
 }

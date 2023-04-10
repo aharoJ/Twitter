@@ -74,9 +74,22 @@ public class UserService
         }
     }
 
+    public void generateEmailVerification(String username) {
+        ApplicationUser user= userRepo.findByUsername(username).orElseThrow(UserDoesNotExistException::new);
+
+        user.setVerification(generateVerificationNumber());
+        userRepo.save(user);
+    }
+
+
     private String generateUsername(String name){
         long generateNumber= (long) Math.floor(Math.random()* 1_000_000_000);
 
         return name+generateNumber;
     }
+
+    private Long generateVerificationNumber(){
+        return (long) Math.floor(Math.random()* 100_000_000);
+    }
+
 }
