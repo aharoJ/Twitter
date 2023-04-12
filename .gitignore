@@ -46,6 +46,9 @@ dev/
 backend/fwitter-backend/src/main/resources/application.properties
 backend/.metadata
 backend/fwitter-backend/src/main/java/com/fwitter/exceptions
+/.metadata/
+**/resources/*.json
+**/StoredCredential
 
 # testing
 dev/
