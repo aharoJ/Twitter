@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fwitter.exceptions.EmailAlreadyTakenException;
+import com.fwitter.exceptions.EmailFailedToSendException;
 import com.fwitter.exceptions.UserDoesNotExistException;
 import com.fwitter.models.ApplicationUser;
 import com.fwitter.models.RegistrationObject;
@@ -58,6 +59,12 @@ public class AuthenticationController {
         return userService.updateUser(user);
     }
 
+    @ExceptionHandler({EmailFailedToSendException.class})
+    public ResponseEntity<String> handleFailEmail(){
+    return new ResponseEntity<String>("Email Failed to send, try again in a moment v_V", HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    
     // go to http://localhost:8000/auth/email/code
     @PostMapping("/email/code")
     public ResponseEntity<String> createEmailVerification(@RequestBody LinkedHashMap<String,String> body){

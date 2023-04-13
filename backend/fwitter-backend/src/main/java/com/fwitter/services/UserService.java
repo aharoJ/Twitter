@@ -6,24 +6,29 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fwitter.exceptions.EmailAlreadyTakenException;
+import com.fwitter.exceptions.EmailFailedToSendException;
 import com.fwitter.exceptions.UserDoesNotExistException;
 import com.fwitter.models.ApplicationUser;
 import com.fwitter.models.RegistrationObject;
 import com.fwitter.models.Role;
 import com.fwitter.repositories.RoleRepository;
 import com.fwitter.repositories.UserRepository;
+// import com.fwitter.services.MailService;;
+
 
 @Service
 public class UserService
 {
     private final UserRepository userRepo;
-    private final RoleRepository roleRepo;
+    private final RoleRepository roleRepo;  
+    private final MailService mailService;
 
     @Autowired
-    public UserService(UserRepository userRepo, RoleRepository roleRepo)
+    public UserService(UserRepository userRepo, RoleRepository roleRepo, MailService mailService)
     {
         this.userRepo= userRepo;
         this.roleRepo= roleRepo;   
+        this.mailService= mailService;
     }
 
     public ApplicationUser getUserByUsername(String username){
@@ -78,6 +83,13 @@ public class UserService
         ApplicationUser user= userRepo.findByUsername(username).orElseThrow(UserDoesNotExistException::new);
 
         user.setVerification(generateVerificationNumber());
+
+        try{
+        mailService.sendEmail(user.getEmail(), "your verification code", "here is your verification code: " + user.getVerification());
+        userRepo.save(user);
+        } catch (Exception e){
+            throw new EmailFailedToSendException();
+        }
         userRepo.save(user);
     }
 
