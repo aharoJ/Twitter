@@ -67,6 +67,7 @@ src/pages/projects.js
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+
 ### VS Code ###
 .vscode/
 

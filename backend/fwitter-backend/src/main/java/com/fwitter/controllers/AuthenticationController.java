@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fwitter.exceptions.EmailAlreadyTakenException;
 import com.fwitter.exceptions.EmailFailedToSendException;
+import com.fwitter.exceptions.IncorrectVerificationCodeException;
 import com.fwitter.exceptions.UserDoesNotExistException;
 import com.fwitter.models.ApplicationUser;
 import com.fwitter.models.RegistrationObject;
@@ -29,6 +30,7 @@ public class AuthenticationController {
         this.userService= userService;
     }
     
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     @ExceptionHandler({EmailAlreadyTakenException.class})
     public ResponseEntity<String> handleEmailTaken(){
         return new ResponseEntity<String>("The email provided is long gone v_V", HttpStatus.CONFLICT); // this blocks repititive emails
@@ -40,8 +42,7 @@ public class AuthenticationController {
         
         return userService.registerUser(ro);
     }
-
-
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     @ExceptionHandler({UserDoesNotExistException.class})
     public ResponseEntity<String> handleUserDoesntExist(){
         return new ResponseEntity<String>("The user you are looking for does not exist v_V", HttpStatus.NOT_FOUND);
@@ -58,7 +59,7 @@ public class AuthenticationController {
         
         return userService.updateUser(user);
     }
-
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     @ExceptionHandler({EmailFailedToSendException.class})
     public ResponseEntity<String> handleFailEmail(){
     return new ResponseEntity<String>("Email Failed to send, try again in a moment v_V", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -71,6 +72,29 @@ public class AuthenticationController {
         userService.generateEmailVerification(body.get("username"));
 
         return new ResponseEntity<String>("Verification Code generated, email sent",HttpStatus.OK );
+    }
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    @ExceptionHandler({IncorrectVerificationCodeException.class})
+    public ResponseEntity<String> incorrectCodeHandler(){
+        return new ResponseEntity<String>("The code provided does not match the users code v_V", HttpStatus.CONFLICT);
+    }
+
+     // go to http://localhost:8000/auth/email/verify
+    @PostMapping("/email/verify")
+    public ApplicationUser verifyEmail(@RequestBody LinkedHashMap<String,String> body){
+        Long code= Long.parseLong(body.get("code"));
+        String username= body.get("username");
+
+        return userService.verifyEmail(username, code);
+    }
+
+    // go to http://localhost:8000/auth/update/password
+    @PutMapping("/update/password")
+    public ApplicationUser updatePassword(@RequestBody LinkedHashMap<String,String> body){
+        String username= body.get("username");
+        String password= body.get("password");
+
+        return userService.setPassword(username, password);
     }
 }
 
