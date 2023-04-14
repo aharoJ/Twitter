@@ -22,6 +22,8 @@ dev/
 # maven
 .mvn
 .mvn/wrapper
+mvnw
+mvnw.cmd
 
 # Security stuff
 
