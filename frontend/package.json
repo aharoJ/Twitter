@@ -1,8 +1,11 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "private":true,
+  "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
@@ -16,17 +19,17 @@
     "build": "react-scripts build"
   },
   "eslintConfig": {
-    "extends":[
+    "extends": [
       "react-app"
     ]
   },
-  "browserslist":{
-    "production":[
+  "browserslist": {
+    "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
     ],
-    "development":[
+    "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"

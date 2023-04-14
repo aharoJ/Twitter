@@ -41,3 +41,6 @@ packages/react-devtools-timeline/dist
 ##########################################################################################
                         WEB DEV IGNORE STUFF 
 
+
+# Testing for authentication form 
+src/index.tsx
