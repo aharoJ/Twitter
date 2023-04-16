@@ -13,7 +13,6 @@ export const Modal:React.FC <ModalProps> = (props:ModalProps) => {
   return (
     <div className='model-overlay'>
         <div className='modal-container bg-color'>
-            content
             {props.children}
         </div>
     </div>
