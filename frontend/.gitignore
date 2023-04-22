@@ -44,3 +44,5 @@ packages/react-devtools-timeline/dist
 
 # Testing for authentication form 
 src/index.tsx
+
+dev/
