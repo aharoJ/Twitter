@@ -2,7 +2,8 @@ import React from "react"
 
 import { ClearRounded, ArrowBackRounded } from '@mui/icons-material'
 
-export const displayIcon= (step:number):JSX.Element=>{
+export const displayIcon= (step:number):JSX.Element=>
+{
     switch(step){
         case 1:
             return <ClearRounded sx={{fontSize:25}}/>
@@ -19,4 +20,13 @@ export const displayIcon= (step:number):JSX.Element=>{
         default:
             return <> </>;
     }
+}
+
+export const iconClass= (step:number):string =>{
+    if (step === 4 || step == 6){
+        return "reg-step-counter-btn-disabled";
+    }
+    return "reg-step-counter-btn"
+
+
 }
