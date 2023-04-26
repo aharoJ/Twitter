@@ -32,7 +32,7 @@ export const getDays= ():JSX.Element[] => {
         if (i===0){
             options.push(<option value={0} key={i}> </option>)
         } else{
-            options.push(<option value={0} key={i}> {i} </option>)
+            options.push(<option value={i} key={i}> {i} </option>)
         }
     }
 
@@ -45,7 +45,7 @@ export const getYears=():JSX.Element[]=>{
         if (i===2023){
             options.push(<option value={0} key={i}> </option>)
         } else{
-            options.push(<option value={0} key={i}> {i} </option>)
+            options.push(<option value={i} key={i}> {i} </option>)
         }
     }
 

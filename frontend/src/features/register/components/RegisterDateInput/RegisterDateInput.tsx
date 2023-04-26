@@ -13,7 +13,8 @@ export const RegisterDateInput:React.FC=() =>{
 
     const [valid,setValid]= useState(true);
 
-    const updateState= (name:string, value:string|number|boolean):void =>{
+    const updateState= (name:string, value:string|number|boolean):void =>
+    {
         dispatch(updateRegister({
             name, 
             value
