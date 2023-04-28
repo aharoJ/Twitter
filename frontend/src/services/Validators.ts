@@ -59,3 +59,13 @@ const checkAge = (dob:Dob): boolean=>{
 
     return false;
 }
+// I need to UPDATE THIS Regex... I have requested the regex... status --> pending 
+export const validateEmail= (value:string):boolean =>{
+    if (!value.toLocaleUpperCase().match(
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    )){
+        return false;
+    }
+
+    return true;
+}

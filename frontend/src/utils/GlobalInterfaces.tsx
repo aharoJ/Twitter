@@ -33,3 +33,10 @@ export interface Dob{
     day: number;
     year: number;
 }
+
+export interface StyledNextButtonProps {
+    active: boolean;
+    theme: Theme;
+    color: string;
+
+}

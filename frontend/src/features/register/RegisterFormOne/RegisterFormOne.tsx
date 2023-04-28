@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
-import { validateName } from '../../../services/Validators';
-
-import { ValidatedInput } from '../../../components/ValidateInput/ValidatedInput';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../redux/Store';
 
 import './RegisterFormOne.css';
-import { Label } from '@mui/icons-material';
 import { RegisterDateInput } from '../components/RegisterDateInput/RegisterDateInput';
+import { RegisterNameInputs } from '../components/RegisterNameInput/RegisterNameInputs';
+import { RegisterEmailInput } from '../components/RegisterEmalInput/RegisterEmailInput';
+import { StyledNextButton } from '../components/RegisterNextButton/RegisterNextButton';
 
 interface FormOneState{
     firstName: string;
@@ -18,41 +19,35 @@ interface FormOneState{
 export const RegisterFormOne:React.FC = () => 
 {
 
-    const [stepOneState, setStepOneState]= useState<FormOneState>({
-        firstName:"",
-        lastName:"",
-        email:"",
-        dateOfBirth:""
-    });
+    const registerState= useSelector((state:RootState) => state.register);
 
-    const updateUser= (e:React.ChangeEvent<HTMLInputElement>): void =>{
-        setStepOneState({...stepOneState, [e.target.name]: e.target.value});
-    }
+    const [buttonActive, setButtonActive]= useState<boolean>(false);
+
 
     useEffect(()=> {
-        console.log("state change: ", stepOneState);
-    }, [stepOneState])
+
+        if (registerState.dobValid && registerState.emailValid && registerState.firstNameValid && registerState.lastNameValid){
+        setButtonActive(true);
+        } else{
+            setButtonActive(false); 
+        }
+
+    }, [registerState])
 
   return (
     <div className="reg-step-one-container">
         <div className="reg-step-one-container">
-            <ValidatedInput name={"firstName"} label={"First"} 
-                errorMessage='Whats your name?'
-                changeValue={updateUser}
-                validator={validateName} 
-            />
-            <ValidatedInput name={"lastName"} label={"Last"} 
-                errorMessage='Whats your name?'
-                changeValue={updateUser}
-                validator={validateName} 
-            />
-            <ValidatedInput name={"email"} label={"email"} 
-                errorMessage='Please enter a valid email.'
-                changeValue={updateUser}
-                validator={()=> true} 
-            />
-            <RegisterDateInput />
+            <RegisterNameInputs />
+            <RegisterEmailInput/>
+            <RegisterDateInput /> 
         </div>
+        <StyledNextButton 
+            disabled={!buttonActive}
+            color={"black"}
+            active={buttonActive}
+            onClick={()=> console.log(" Go to the next page")} >
+                Next
+            </StyledNextButton>
     </div>
   )
 }
