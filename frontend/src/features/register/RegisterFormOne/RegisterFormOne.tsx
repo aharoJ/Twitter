@@ -42,7 +42,7 @@ export const RegisterFormOne:React.FC = () =>
 
   return (
     <div className="reg-step-one-container">
-        <div className="reg-step-one-container">
+        <div className="reg-step-one-content">
             <RegisterNameInputs firstName={registerState.firstName} lastName={registerState.lastName}/>
             <RegisterEmailInput email={registerState.email}/>
             <RegisterDateInput date={registerState.dob}/> 

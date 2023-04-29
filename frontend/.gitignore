@@ -44,5 +44,7 @@ packages/react-devtools-timeline/dist
 
 # Testing for authentication form 
 src/index.tsx
-
 dev/
+
+# Security Concerns
+src/utils/GlobalInterfaces.tsx

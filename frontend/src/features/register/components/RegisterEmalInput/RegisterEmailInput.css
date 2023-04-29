@@ -1,0 +1,10 @@
+.register-email-input{
+    margin-bottom: 25px;
+}
+
+.register-email-error{
+    color: red;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 10px;
+}

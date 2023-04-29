@@ -1,4 +1,16 @@
 .reg-step-one-container{
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-step-one-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
 }
