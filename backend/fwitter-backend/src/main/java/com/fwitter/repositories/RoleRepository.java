@@ -11,7 +11,4 @@ import com.fwitter.models.Role;
 public interface RoleRepository extends JpaRepository<Role, Integer> // store a role, and ID 
 {
     Optional<Role> findByAuthority(String autority);
-
-
-    
 }

@@ -57,8 +57,6 @@ public class MailService {
             if (error.getCode()== 403){
                 throw e;
             }*/
-        } 
-        
+        }    
     }
-
 }
