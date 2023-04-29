@@ -60,11 +60,11 @@ Thank you for your interest in the open-source Twitter Reverse Engineered projec
 First, run the development server:
 
 ```bash
-npm run dev
+npm start
 # or
-yarn dev
+yarn start
 # or
-pnpm dev
+pnpm start
 ```
 
 ## Learn More
