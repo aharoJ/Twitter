@@ -20,8 +20,8 @@
 
 
 ### Frontend Snippet
+![Alt text](z/aharoJ_FrontEnd.png)
 
-![Alt text](z/aharoJ_frontend.png)
 
 
 ### Backend Snippet
