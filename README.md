@@ -18,7 +18,7 @@
 
 <h1 align="center"> <a href=https://aharoj.io> Visit Portfolio </a> </h1>
 
-![Alt text](dev/aharoJ_FrontEnd.png)
+![Alt text](z/aharoJ_FrontEnd.png)
 
 # twitter-reversed_engineered
 
