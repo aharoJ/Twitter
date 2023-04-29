@@ -19,9 +19,13 @@
 <h1 align="center"> <a href=https://aharoj.io> Visit Portfolio </a> </h1>
 
 ### Frontend Snippet
+
+
 ![Alt text](z/aharoJ_frontend.png)
 
 ### Backend Snippet
+
+
 ![Alt text](z/aharoJ_backend.png)
 
 ---
