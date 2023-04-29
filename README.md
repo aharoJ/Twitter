@@ -72,12 +72,12 @@ pnpm dev
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about React.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React.js Documentation](https://react.dev/learn) - learn about React.js features and API.
+- [Learn React.js API's](https://react.dev/reference/react) - an interactive API's React.js tutorial andsources.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out [the React.js GitHub repository](https://github.com/facebook/react) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
