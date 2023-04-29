@@ -26,7 +26,7 @@
 
 ### Backend Snippet
 
-![Alt text](z/aharoJ_backend.png)
+<!-- ![Alt text](z/aharoJ_backend.png) -->
 
 ---
 
