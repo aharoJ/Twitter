@@ -32,17 +32,17 @@ Welcome to the open-source project for reverse engineering Twitter - an ongoing,
 
 This project is designed to impress potential employers and demonstrate my commitment to tackling complex challenges in the field of software development.
 
-### Project Overview
+<h3 align="center"> Project Overview </a> </h3>
 This reverse-engineered Twitter application aims to cover all aspects of the platform, including the backend, frontend, database, APIs, and more. The technologies used in this project are:
 
 Backend: Spring Boot, Java, Postman
 Database: PostgreSQL
 Frontend: TypeScript, React, Tailwind CSS (future integration)
 
-### Progress
+<h3 align="center"> Progress </a> </h3>
 As of now, the project is approximately 35% complete and remains an ongoing development effort. Your feedback, suggestions, and contributions are highly appreciated, as they will help to improve the quality and comprehensiveness of the project.
 
-### Roadmap
+<h3 align="center"> Roadmap </a> </h3>
 Complete the backend development using Spring Boot, Java, and Postman
 Implement the database layer using PostgreSQL
 Develop the frontend using TypeScript, React, and Tailwind CSS
@@ -56,10 +56,7 @@ Feel free to contribute to the project by submitting pull requests, reporting bu
 Thank you for your interest in the open-source Twitter Reverse Engineered project. Together, we can create an impressive, fully-functioning replica of the social media platform while simultaneously learning and growing as software engineers.
 
 
-
-
 ## Getting Started
-
 First, run the development server:
 
 ```bash
