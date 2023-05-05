@@ -1,5 +1,5 @@
 import { RegisterFormOne } from "../RegisterFormOne/RegisterFormOne"
-
+import { RegisterFormTwo } from "../RegisterFormTwo/RegisterFormTwo"
 
 export const determineModalContent= (step: number):JSX.Element =>
 {
@@ -7,7 +7,7 @@ export const determineModalContent= (step: number):JSX.Element =>
         case 1:
             return <RegisterFormOne/>
         case 2:
-            return <span> Registradtion Step 2</span>
+            return <RegisterFormTwo/>
         case 3:
             return <span> Registradtion Step 3</span>
         case 4:

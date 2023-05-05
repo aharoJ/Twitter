@@ -14,3 +14,26 @@
     align-content: center;
     width: 75%;
 }
+
+.reg-step-one-header{
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.reg-step-one-dob-disclaimer{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 15px;
+}
+
+.reg-step-one-dob-header{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.reg-step-one-dob-text{
+    font-size: 14px;
+    color: #536471;
+    font-weight: 400;
+}

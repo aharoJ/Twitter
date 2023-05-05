@@ -1,0 +1,60 @@
+.reg-step-two-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-step-two-content{
+    width: 75%;
+}
+
+.reg-step-two-header{
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.reg-step-two-sub-head{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.reg-step-two-toggle-group{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reg-step-two-privacy{
+    margin: 0;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.reg-step-two-policy{
+    font-size: 15px;
+    font-weight: 400px;
+    color: #536471;
+    margin-bottom: 40px;
+}
+
+.reg-step-two-link {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1da1f2;
+    cursor: pointer;
+}
+
+.reg-step-two-link:hover{
+    text-decoration: underline;
+}

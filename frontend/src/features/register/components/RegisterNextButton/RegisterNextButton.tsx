@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { StyledNextButtonProps } from "../../../../utils/GlobalInterfaces";
 
 export const StyledNextButton= styled.button<StyledNextButtonProps>`
-    width: 100%;
+    width: 75%;
     height: 52px;
     font-size: 17px;
     color: white;

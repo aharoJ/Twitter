@@ -27,3 +27,12 @@
     -moz-appearance: none;
     width: 100%;
 }
+
+ .validated-input-remainder{ /*this places it on the top right */
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #657786;
+}
