@@ -1,3 +1,5 @@
+import { Dob } from "./GlobalInterfaces";
+
 const MONTHS: string[]=[
     "",
     'January',
@@ -50,4 +52,8 @@ export const getYears=():JSX.Element[]=>{
     }
 
     return options;
+}
+
+export const stringifyDate= (date:Dob):string =>{
+    return `${MONTHS[date.month].substring(0,3)} ${date.day}, ${date.year}`
 }

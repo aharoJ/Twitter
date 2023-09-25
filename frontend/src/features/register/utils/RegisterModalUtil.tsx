@@ -1,6 +1,6 @@
 import { RegisterFormOne } from "../RegisterFormOne/RegisterFormOne"
 import { RegisterFormTwo } from "../RegisterFormTwo/RegisterFormTwo"
-
+import { RegisterFormThree } from "../RegisterFormThree/RegisterFormThree"
 export const determineModalContent= (step: number):JSX.Element =>
 {
     switch(step){
@@ -9,7 +9,7 @@ export const determineModalContent= (step: number):JSX.Element =>
         case 2:
             return <RegisterFormTwo/>
         case 3:
-            return <span> Registradtion Step 3</span>
+            return <RegisterFormThree/>
         case 4:
             return <span> Registradtion Step 4</span>
         case 5:

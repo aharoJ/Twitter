@@ -1,0 +1,46 @@
+.reg-step-three-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-step-three-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-step-three-header {
+    align-self: flex-start;
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.reg-step-three-value {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.reg-step-three-policy {
+    font-size: 13px;
+    font-weight: 400;
+    color: #536471;
+}
+
+.reg-step-three-link {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+.reg-step-three-link:hover {
+    text-decoration: underline;
+}
+
+

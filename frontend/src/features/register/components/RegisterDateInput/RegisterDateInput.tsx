@@ -6,6 +6,7 @@ import { AppDispatch, RootState } from '../../../../redux/Store';
 import { updateRegister } from '../../../../redux/Slices/RegisterSlice';
 import { validateDob } from '../../../../services/Validators';
 import { Dob } from '../../../../utils/GlobalInterfaces';
+
 import './RegisterDateInput.css'
 
 interface RegisterDateInputProps{
@@ -17,7 +18,7 @@ export const RegisterDateInput:React.FC<RegisterDateInputProps>=({date}) =>{
     const state= useSelector((state:RootState)=> state.register);
     const dispatch:AppDispatch= useDispatch();
 
-    const [valid,setValid]= useState(true);
+    const [valid,setValid]= useState<boolean> (true);
 
     const updateState= (name:string, value:string|number|boolean):void =>
     {

@@ -45,6 +45,7 @@ export const RegisterFormOne:React.FC = () =>
             </div>
             <RegisterDateInput date={registerState.dob}/> 
         </div>
+        
         <StyledNextButton 
             disabled={!buttonActive}
             color={"black"}

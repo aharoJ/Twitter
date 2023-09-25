@@ -4,7 +4,9 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../../redux/Store";
 import { updateRegister } from "../../../../redux/Slices/RegisterSlice";
 import { validateName } from "../../../../services/Validators";
+
 import './RegisterNameInputs.css'
+
 interface RegisterNameInputProps{
     firstName: string;
     lastName: string;
