@@ -26,35 +26,6 @@
 
 ---
 
-# twitter-reversed_engineered
-
-Welcome to the open-source project for reverse engineering Twitter - an ongoing, dedicated effort to recreate a full-stack application that mimics the features and functionalities of the popular social media platform. As a solo developer, I have poured countless hours into researching and developing this project for the purpose of expanding my knowledge and skill set, as well as showcasing my passion for software engineering.
-
-This project is designed to impress potential employers and demonstrate my commitment to tackling complex challenges in the field of software development.
-
-<h3 align="center"> Project Overview </a> </h3>
-This reverse-engineered Twitter application aims to cover all aspects of the platform, including the backend, frontend, database, APIs, and more. The technologies used in this project are:
-
-Backend: Spring Boot, Java, Postman
-Database: PostgreSQL
-Frontend: TypeScript, React, Tailwind CSS (future integration)
-
-<h3 align="center"> Progress </a> </h3>
-As of now, the project is approximately 35% complete and remains an ongoing development effort. Your feedback, suggestions, and contributions are highly appreciated, as they will help to improve the quality and comprehensiveness of the project.
-
-<h3 align="center"> Roadmap </a> </h3>
-Complete the backend development using Spring Boot, Java, and Postman
-Implement the database layer using PostgreSQL
-Develop the frontend using TypeScript, React, and Tailwind CSS
-Integrate frontend and backend components
-Conduct thorough testing and debugging
-Optimize performance and security
-Add new features and enhancements based on community feedback
-Contributions & Support
-Feel free to contribute to the project by submitting pull requests, reporting bugs, or suggesting new features. Your involvement in the project is crucial for its success and continuous improvement.
-
-Thank you for your interest in the open-source Twitter Reverse Engineered project. Together, we can create an impressive, fully-functioning replica of the social media platform while simultaneously learning and growing as software engineers.
-
 # How To Run
 
 1. Run Database
