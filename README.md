@@ -14,14 +14,14 @@
 </div>  
 <!-- END -->
 
-
-
 <h1 align="center"> <a href=https://aharoj.io> Visit Portfolio </a> </h1>
 
 ### Frontend Snippet
+
 ![Alt text](z/aharoJ_FrontEnd.png)
 
 ### Backend Snippet
+
 ![Alt text](z/aharoJ_backend.png)
 
 ---
@@ -55,29 +55,64 @@ Feel free to contribute to the project by submitting pull requests, reporting bu
 
 Thank you for your interest in the open-source Twitter Reverse Engineered project. Together, we can create an impressive, fully-functioning replica of the social media platform while simultaneously learning and growing as software engineers.
 
+# How To Run
 
-## Getting Started
-First, run the development server:
+1. Run Database
+2. Run Backend
+3. Run Frontend
 
-```bash
-npm start
-# or
-yarn start
-# or
-pnpm start
+```sh
+git clone https://github.com/aharoJ/Twitter.git
 ```
 
-## Learn More
+```sh
+cd Twitter
+```
 
-To learn more about React.js, take a look at the following resources:
+---
 
-- [React.js Documentation](https://react.dev/learn) - learn about React.js features and API.
-- [Learn React.js API's](https://react.dev/reference/react) - an interactive API's React.js tutorial andsources.
+## Database
 
-You can check out [the React.js GitHub repository](https://github.com/facebook/react) - your feedback and contributions are welcome!
+### make sure you `create` the PostgreSQL database
 
-## Deploy on Vercel
+> src/resources/application.properties
+> remove CAPS variable names and add your credentials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+spring.datasource.url=jdbc:mysql://localhost:3306/DATABASE_NAME
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## Backend
+
+> cd into the backend and do
+
+```sh
+./mvwn clean install
+```
+
+RUN SPRING
+
+```sh
+ ./mvnw clean spring-boot:run
+```
+
+---
+
+> cd into the frontend and do
+
+## Frontend
+
+```sh
+npm install --force
+npm run dev
+```
+
+### RUN the frontend
+
+```sh
+ npm run dev
+```
