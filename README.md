@@ -44,10 +44,13 @@ cd Twitter
 
 ## Database
 
-### make sure you `create` the PostgreSQL database
+<h4 align="center"> make sure you create the PostgreSQL database </h4>
 
-> src/resources/application.properties
-> remove CAPS variable names and add your credentials
+> cd into src/resources/application.properties
+
+> remove CAPS variable names 
+
+> add your credentials
 
 ```sh
 spring.datasource.url=jdbc:mysql://localhost:3306/DATABASE_NAME
@@ -73,9 +76,10 @@ RUN SPRING
 
 ---
 
-> cd into the frontend and do
 
 ## Frontend
+
+> cd into the frontend and do
 
 ```sh
 npm install --force
